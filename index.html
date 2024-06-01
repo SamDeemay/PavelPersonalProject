@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pavel</title>
+    <!--
+    
+    <script src="finalFinalScript.js"></script>
+    <script src="newMessageScript.js"></script>
+    -->
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="chat-container">
+      <div class="chat-header">
+        <h1>Chat with Pavel!</h1>
+        <h4>someone you can talk to!</h4>
+      </div>
+
+      <div class="chat-messages" id="chatMessages">
+        <p id="output" class="message pavel">
+          Hi friend! How are you doing today?
+        </p>
+      </div>
+
+      <form onsubmit="event.preventDefault(); generateMessage()">
+        <div class="myMessage">
+          <input
+            type="text"
+            id="userInput"
+            name="userInput"
+            required
+            autocomplete="off"
+            placeholder="Type your message..."
+          />
+          <button type="submit" class="sendButton">
+            <img
+              src="paper-plane.svg"
+              alt="My Vector Image"
+              width="15"
+              height="15"
+            />
+          </button>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
